@@ -1,0 +1,372 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.width{
+    border: solid grey;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* header */
+
+header{
+    width: 100%;
+    height: 130px;
+    background-color: #0E550B;
+    text-align: center;
+}
+
+header div#titulo{
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header h1{
+    color: white;
+    font-size: 25px;
+    margin: 0;
+}
+
+header div#buscador{
+    width: auto;
+    display: inline-block;
+    margin: 45px 20% 0px 20%;
+}
+
+header .width div#buscador input[type="text"]{
+    background-color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 100px 0px 0px 100px;
+    padding: 6px 6px 6px 15px;
+}
+
+header .width div#buscador input[type="text"]:focus{
+    outline: none;
+}
+
+header .width div#buscador button#lupa {
+    background-color: white;
+    color: grey;
+    font-size: 16px;
+    border: none;
+    border-radius: 0px 100px 100px 0px;
+    padding: 6px 15px 6px 6px;
+    float: right;
+    cursor: pointer;
+}
+
+header .width div#buscador button#lupa:focus{
+    outline: none;
+}
+
+header .width div#identificate{
+    width: auto;
+    margin-right: 2%;
+    display: inline-block;
+}
+
+header .width div#identificate a#boton-iden{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 6px 28px;
+    background-color: none;
+    border: 2px solid white;
+    border-radius: 100px;
+    display: inline-block;
+}
+
+header .width div#identificate a#boton-iden:hover{
+    color: #0E550B;
+    font-weight: bold;
+    background-color: white;
+    border: transparent;
+}
+
+header .width div#compra{
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header .width a#cesta{
+    color: #F9D51F;
+    font-size: 20px;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* sections */
+
+section{
+    border: solid grey;
+    width: 100%;
+    text-align: center;
+}
+
+.secciones{
+    border: solid red;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.secciones h2{
+    color: #0E550B;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    vertical-align: middle;
+}
+
+section .flechas{
+    width: auto;
+    display: inline-block;
+}
+
+section .flechas a#prev{
+    color: #0E550B;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+}
+
+section .flechas a#next{
+    color: #0E550B;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: left;
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+}
+
+section .secciones div#fondo-slide{
+    background-color: rgb(253, 224, 81);
+    width: 100%;
+    margin-top: 1%;
+    vertical-align: middle;
+}
+
+section .secciones div#fondo-slide .slides .img-nov{
+    width: 18%;
+    margin: 2% 2% 2% 20%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+section .secciones img{
+    width: auto;
+    box-shadow: 5px 5px 8px rgb(0, 0, 0, 0.8);
+}
+
+section .secciones div#fondo-slide .slides .text-nov{
+    width: 25%;
+    text-align: left;
+    margin: 2% 20% 2% 0%;
+    vertical-align: top;
+    display: inline-block;
+}
+
+section .secciones .p-titulo{
+    color: #0E550B;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0;
+}
+
+section .secciones .p-autor{
+    color: #0E550B;
+    font-size: 16px;
+    font-style: italic;
+    margin: 0;
+}
+
+section .secciones div#fondo-slide .slides .text-nov .p-resumen{
+    color: #0E550B;
+    font-size: 16px;
+    margin: 3% 0% 0% 0%;
+}
+
+section .secciones div#fondo-slide .slides .text-nov .verlibro{
+    width: auto;
+    text-align: center;
+    margin-top: 5%;
+}
+
+section .secciones div#fondo-slide .slides  .text-nov .verlibro .boton-verlibro{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    padding: 5px 25px;
+    background-color: #0E550B;
+    border-radius: 100px;
+}
+
+section .secciones div#fondo-slide .slides  .text-nov .verlibro .boton-verlibro:hover{
+    background-color: rgb(5, 61, 3);
+}
+
+section .secciones ul{
+    list-style-type: none;
+    list-style: none;
+    padding: 0;
+    margin: 2% 0% 0% 0%;
+}
+
+section .secciones li{
+    display: inline-block;
+    width: auto;
+    margin: 0% 1% 1% 1%;
+}
+
+section .secciones ul .boton-categ{
+    text-decoration: none;
+    color: #0E550B;
+    font-size: 14px;
+    font-weight: bold;
+    width: 135px;
+    padding: 8px 10px;
+    background-color: #F9D51F;
+    border-radius: 100px;
+    display: inline-block;
+}
+
+section .secciones ul .boton-categ:hover{
+    color: #0E550B;
+    background-color: rgb(226, 191, 15);
+    border: transparent;
+}
+
+section .secciones .libro-popular{
+    width: 16%;
+    margin: 2% 2% 0% 1%;
+    vertical-align: top;
+    display: inline-block;
+}
+
+section .secciones .text-populares{
+    width: auto;
+    margin-top: 3%;
+}
+
+section .secciones .text-populares .estrellas{
+    color: #F9D51F;
+    margin-top: 5%;
+}
+
+section .secciones .text-populares .estrellas .fa-star{
+    margin: 0% 2% 0% 2%;
+}
+
+section .secciones div#fondo-suscribirse{
+    border: solid purple;
+    background-color: #F9D51F;
+    width: 100%;
+    /* vertical-align: middle; */
+}
+
+section .secciones div#fondo-suscribirse p#sus-bold{
+    color: #0E550B;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin: 2% 0% 0% 0%;
+}
+
+section .secciones div#fondo-suscribirse p#sus-bold::before{
+    font-family: "Font Awesome 5 Free"; font-weight: normal; content: "\f0e0";
+    color: #0E550B;
+    font-size: 23px;
+    margin-right: 1%;
+    vertical-align: middle;
+}
+
+section .secciones div#fondo-suscribirse p#sus-regular{
+    color: #0E550B;
+    font-size: 16px;
+    text-align: center;
+    margin: 0% 0% 0% 0%;
+}
+
+section .secciones div#fondo-suscribirse form#formulario{
+    text-align: center;
+    margin: 1% 0% 2% 0%;
+}
+
+section .secciones div#fondo-suscribirse form#formulario input#mail{
+    font-size: 15px;
+    width: 20%;
+    border: none;
+    border-radius: 6px;
+    padding: 5px 0px 5px 10px;
+    outline: none;
+}
+
+section .secciones div#fondo-suscribirse form#formulario input#button{
+    color: white;
+    font-size: 15px;
+    width: 9%;
+    background-color: #0E550B;
+    border: none;
+    border-radius: 6px;
+    padding: 5px 10px 5px 10px;
+    user-select: none;
+    cursor: pointer;
+}
+
+section .secciones div#fondo-suscribirse form#formulario input#button:hover{
+    background-color:rgb(5, 61, 3);
+    outline: none;
+}
+
+/* footer */
+
+footer{
+    width: 100%;
+    background-color: #0E550B;
+    text-align: center;
+}
+
+footer .width .listas-footer{
+    border: solid orange;
+    width: 100%;
+    min-width: 60%;
+    padding: 0;
+    margin: 3% 0% 3% 0%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .width .list-footer{
+    border: solid red;
+    /* width: 40%; */
+    min-width: 20%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    list-style-type: none;
+}
+
+footer .width .list-footer .p-amarillo{
+    color: #F9D51F;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer .width .list-footer p{
+    color: white;
+    font-size: 16px;
+    text-align: left;
+    margin: 1% 0% 1% 0%;
+}

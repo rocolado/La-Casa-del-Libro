@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>La Casa del Libro</title>
+    <link rel="stylesheet" href="../utils/normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="../utils/modernizr-custom.js"></script>
+    <script src="js/functions.js"></script>
+    <link rel="stylesheet" href="../fonts/webfonts/all.css">
+</head>
+
+<body>
+    <header>
+        <section class="width">
+            <div id="titulo">
+                <h1>La Casa del Libro</h1>
+            </div>
+            
+            <div id="buscador">
+                <form action="">
+                    <input type="text" name="buscador" placeholder="Buscar título, autor, género">
+                    <button id="lupa" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+
+            <div id="identificate">
+                <a id="boton-iden" href="">Identifícate</a>
+            </div>
+
+            <div id="compra">
+                <a id="cesta" href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </section>
+    </header>
+
+    <section>
+        <div class="flechas">
+            <a id="prev" onclick="plusSlides(-1)"><i class="fas fa-chevron-left"></i></a>
+        </div>
+
+        <article class="width secciones">
+            <div>
+                <h2>Novedades de Julio</h2>
+            </div>
+
+            <div id="fondo-slide">
+                <div class="slides">
+                    <div class="img-nov">
+                        <img src="../images/baladadepajaros.jpg" alt="Balada de pájaros cantores y serpientes">
+                    </div>
+
+                    <div class="text-nov">
+                        <p class="p-titulo">Balada de pájaros cantores y serpientes</p>
+                        <p class="p-autor">Autor/a: Suzanne Collins</p>
+                        <p class="p-resumen">La ambición será su motor. La rivalidad, su motivación. Pero alcanzar el poder tiene un precio. Es la mañana de la cosecha que dará comienzo a los décimos Juegos del Hambre. En el Capitolio, Coriolanus Snow, de dieciocho años, se prepara para. Pero alcanzar el poder tiene un precio. Es la mañana de la cosecha que dará comienzo a los décimos Juegos del Hambre.</p>
+
+                        <div class="verlibro">
+                            <a class="boton-verlibro" href="">Ver libro</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slides">
+                    <div class="img-nov">
+                        <img src="../images/elenigma.jpg" alt="El enigma de la habitación 622">
+                    </div>
+
+                    <div class="text-nov">
+                        <p class="p-titulo">El enigma de la habitación 622</p>
+                        <p class="p-autor">Autor/a: Joël Dicker</p>
+                        <p class="p-resumen">Una noche de diciembre, un cadáver yace en el suelo de la habitación 622 del Palace de Verbier, un hotel de lujo en los Alpes suizos. La investigación policial no llegará nunca a término y el paso del tiempo hará que muchos olviden lo sucedido. No se imagina que terminará investigando. La investigación policial no llegará nunca a término y el paso del tiempo hará que muchos olviden lo sucedido. No se imagina que terminará.</p>
+
+                        <div class="verlibro">
+                            <a class="boton-verlibro" href="">Ver libro</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slides">
+                    <div class="img-nov">
+                        <img src="../images/elmensajepandora.jpg" alt="El mensaje de Pandora">
+                    </div>
+
+                    <div class="text-nov">
+                        <p class="p-titulo">El mensaje de Pandora</p>
+                        <p class="p-autor">Autor/a: Javier Sierra</p>
+                        <p class="p-resumen">Siempre que un dogma cae, un nuevo mundo nace El día que Arys cumplió dieciocho años recibió esta extraña carta. Le llegó desde Atenas envuelta en papel de estraza con el apremio de que debía leerla de inmediato. Escrita en circunstancias excepcionales, en ella su tía evoca el último viaje que. Le llegó desde Atenas envuelta en papel de estraza con el apremio de que debía leerla de inmediato. Escrita en circunstancias excepcionales.</p>
+
+                        <div class="verlibro">
+                            <a class="boton-verlibro" href="">Ver libro</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <div class="flechas">
+            <a id="next" onclick="plusSlides(1)"><i class="fas fa-chevron-right"></i></a>
+        </div>
+    </section>
+
+    <section>
+        <div class="width secciones">
+            <div>
+                <h2>Categorías</h2>
+            </div>
+
+            <div id="lista-categ">
+                <ul>
+                    <li>
+                        <a class="boton-categ" href="">Narrativa</a>
+                    </li>
+    
+                    <li>
+                        <a class="boton-categ" href="">Teatro</a>
+                    </li>
+    
+                    <li>
+                        <a class="boton-categ" href="">Novela negra</a>
+                    </li>
+    
+                    <li>
+                        <a class="boton-categ" href="">Novela de terror</a>
+                    </li>
+    
+                    <li>
+                        <a class="boton-categ" href="">Música</a>
+                    </li>
+    
+                    <li>
+                        <a class="boton-categ" href="">Arte</a>
+                    </li>
+    
+                    <li>
+                        <a class="boton-categ" href="">Poesía</a>
+                    </li>
+    
+                    <li>
+                        <a class="boton-categ" href="">Juvenil</a>
+                    </li>
+    
+                    <li>
+                        <a class="boton-categ" href="">Novela histórica</a>
+                    </li>
+    
+                    <li>
+                        <a class="boton-categ" href="">Cocinar</a>
+                    </li>
+    
+                    <li>
+                        <a class="boton-categ" href="">Diseño y moda</a>
+                    </li>
+    
+                    <li>
+                        <a class="boton-categ" href="">Fotografía</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="flechas">
+            <a id="prev"><i class="fas fa-chevron-left"></i></a>
+        </div>
+
+        <article class="width secciones">
+            <div>
+                <h2>Los más populares</h2>
+            </div>
+
+            <div class="libro-popular">
+                <div class="img-pop">
+                    <img src="../images/elprincipeniebla.jpg" alt="El príncipe de la niebla">
+                </div>
+
+                <div class="text-populares">
+                    <p class="p-titulo">El príncipe de la niebla</p>
+                    <p class="p-autor">Autor/a: Carlos Ruiz Zafón</p>
+                    
+                    <div class="estrellas">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="libro-popular">
+                <div class="img-pop">
+                    <img src="../images/tuyotrosdesastres.jpg" alt="Tú y otros desastres naturales">
+                </div>
+
+                <div class="text-populares">
+                    <p class="p-titulo">Tú y otros desastres naturales</p>
+                    <p class="p-autor">Autor/a: María Martínez</p>
+
+                    <div class="estrellas">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="libro-popular">
+                <div class="img-pop">
+                    <img src="../images/harrypotter.jpg" alt="Harry Potter y la piedra filosofal">
+                </div>
+
+                <div class="text-populares">
+                    <p class="p-titulo">Harry Potter y la piedra filosofal</p>
+                    <p class="p-autor">Autor/a: J.K. Rowling</p>
+
+                    <div class="estrellas">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="libro-popular">
+                <div class="img-pop">
+                    <img src="../images/todoestotedare.jpg" alt="Todo esto te daré">
+                </div>
+
+                <div class="text-populares">
+                    <p class="p-titulo">Todo esto te daré</p>
+                    <p class="p-autor">Autor/a: Dolores Redondo</p>
+
+                    <div class="estrellas">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="libro-popular">
+                <div class="img-pop">
+                    <img src="../images/labuenasuerte.jpg" alt="La buena suerte">
+                </div>
+
+                <div class="text-populares">
+                    <p class="p-titulo">La buena suerte</p>
+                    <p class="p-autor">Autor/a: Rosa Montero</p>
+
+                    <div class="estrellas">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <div class="flechas">
+            <a id="next"><i class="fas fa-chevron-right"></i></a>
+        </div>
+    </section>
+
+    <section>
+        <div class="flechas">
+            <a id="prev"><i class="fas fa-chevron-left"></i></a>
+        </div>
+
+        <article class="width secciones">
+            <div>
+                <h2>Recomendados para ti</h2>
+            </div>
+
+            <div class="libro-popular">
+                <div class="img-pop">
+                    <img src="../images/mujeresnoperdonan.jpg" alt="Mujeres que no perdonan">
+                </div>
+
+                <div class="text-populares">
+                    <p class="p-titulo">Mujeres que no perdonan</p>
+                    <p class="p-autor">Autor/a: Camilla Läckberg</p>
+                    
+                    <div class="estrellas">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="libro-popular">
+                <div class="img-pop">
+                    <img src="../images/lachicadenieve.jpg" alt="La chica de la nieve">
+                </div>
+
+                <div class="text-populares">
+                    <p class="p-titulo">La chica de la nieve</p>
+                    <p class="p-autor">Autor/a: Javier Castillo</p>
+
+                    <div class="estrellas">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="libro-popular">
+                <div class="img-pop">
+                    <img src="../images/lanena.jpg" alt="La Nena">
+                </div>
+
+                <div class="text-populares">
+                    <p class="p-titulo">La Nena</p>
+                    <p class="p-autor">Autor/a: Carmen Mola</p>
+
+                    <div class="estrellas">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="libro-popular">
+                <div class="img-pop">
+                    <img src="../images/reinaroja.jpg" alt="Reina roja">
+                </div>
+
+                <div class="text-populares">
+                    <p class="p-titulo">Reina roja</p>
+                    <p class="p-autor">Autor/a: Juan Gómez-Jurado</p>
+
+                    <div class="estrellas">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="libro-popular">
+                <div class="img-pop">
+                    <img src="../images/dondefuimos.jpg" alt="Donde fuimos invencibles">
+                </div>
+
+                <div class="text-populares">
+                    <p class="p-titulo">Donde fuimos invencibles</p>
+                    <p class="p-autor">Autor/a: Maria Orduña</p>
+
+                    <div class="estrellas">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <div class="flechas">
+            <a id="next"><i class="fas fa-chevron-right"></i></a>
+        </div>
+    </section>
+
+    <section>
+        <div class="width secciones">
+            <div id="fondo-suscribirse">
+                <p id="sus-bold">Recibe nuestras novedades en libros en tu email</p>
+                <p id="sus-regular">Descuentos en libros, últimos títulos publicados y más</p>
+
+                <form action="" id="formulario">
+                    <input type="text" name="mail" id="mail" placeholder="Introduce tu mail">
+                    <input type="submit" name="submit" id="button" value="Suscribirme"> 
+                </form>
+            </div> 
+        </div>
+    </section>
+
+    <footer>
+        <section class="width">
+            <div class="listas-footer">
+                <ul class="list-footer">
+                    <li>
+                        <p class="p-amarillo">Casa del Libro</p>
+                    </li>
+
+                    <li>
+                        <p>Quiénes somos</p>
+                    </li>
+
+                    <li>
+                        <p>Trabaja con nosotros</p>
+                    </li>
+
+                    <li>
+                        <p>Nuestas librerías</p>
+                    </li>
+
+                    <li>
+                        <p>Eventos en tu librería</p>
+                    </li>
+
+                    <li>
+                        <p>Casa del Libro México</p>
+                    </li>
+
+                    <li>
+                        <p>Libros recomendados</p>
+                    </li>
+                </ul>
+
+                <ul class="list-footer">
+                    <li>
+                        <p class="p-amarillo">Ayuda</p>
+                    </li>
+
+                    <li>
+                        <p>Devoluciones</p>
+                    </li>
+
+                    <li>
+                        <p>Gastos de envío</p>
+                    </li>
+
+                    <li>
+                        <p>Preguntas frecuentes</p>
+                    </li>
+
+                    <li>
+                        <p>Estado de tu pedido</p>
+                    </li>
+
+                    <li>
+                        <p>Incidencias de pedidos</p>
+                    </li>
+
+                    <li>
+                        <p>Contacta con nosotros</p>
+                    </li>
+                </ul>
+
+                <ul class="list-footer">
+                    <li>
+                        <p class="p-amarillo">Información legal</p>
+                    </li>
+
+                    <li>
+                        <p>Condiciones de usos</p>
+                    </li>
+
+                    <li>
+                        <p>Condiciones de contratación</p>
+                    </li>
+
+                    <li>
+                        <p>Condiciones para vender</p>
+                    </li>
+
+                    <li>
+                        <p>Política de protección de datos</p>
+                    </li>
+
+                    <li>
+                        <p>Política de devoluciones y anulaciones</p>
+                    </li>
+
+                    <li>
+                        <p>Política de cookies</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+</body>
