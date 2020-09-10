@@ -1,4 +1,4 @@
-var slideIndex = 1;
+var slideIndex = 0;
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -6,15 +6,19 @@ function plusSlides(n) {
 }
 
 function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("slides");
+  var i, slides;
+  slides = document.getElementsByClassName("slides");
   slideIndex = n;
-  console.log("slides: ", slides)
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
+  
+  if (n >= slides.length) {
+    slideIndex = 0
+  }   
+
   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
+    if (i != slideIndex) {
+      slides[i].style.display = "none";
+    } else {
+      slides[i].style.display = "inline-block";  
+    }
   }
-  console.log("slideobjetivo: ", slides[slideIndex-1])
-  slides[slideIndex-1].style.display = "block";
 }
