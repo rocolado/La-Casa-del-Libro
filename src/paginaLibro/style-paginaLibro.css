@@ -1,0 +1,396 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* general */
+
+.width{
+    border: solid grey;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img{
+    box-shadow: 5px 5px 8px rgb(0, 0, 0, 0.8);
+}
+
+.p-titulo{
+    color: #0E550B;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0% 0% 1% 0%;
+}
+
+.p-autor{
+    color: #0E550B;
+    font-size: 17px;
+    font-style: italic;
+    margin: 0% 0% 2% 0%;
+}
+
+.p-resumen{
+    color: #0E550B;
+    font-size: 17px;
+    margin: 4% 0% 0% 0%;
+}
+
+.estrellas{
+    color: #F9D51F;
+    font-size: 110%;
+}
+
+.estrellas .fa-star{
+    margin: 0% 1% 0% 0%;
+}
+
+/* header */
+
+header{
+    width: 100%;
+    height: 130px;
+    background-color: #0E550B;
+    text-align: center;
+}
+
+header div#titulo{
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header h1{
+    color: white;
+    font-size: 25px;
+    margin: 0;
+}
+
+header div#buscador{
+    width: auto;
+    display: inline-block;
+    margin: 45px 20% 0px 20%;
+}
+
+header .width div#buscador input[type="text"]{
+    background-color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 100px 0px 0px 100px;
+    padding: 6px 6px 6px 15px;
+}
+
+header .width div#buscador input[type="text"]:focus{
+    outline: none;
+}
+
+header .width div#buscador button#lupa {
+    background-color: white;
+    color: grey;
+    font-size: 16px;
+    border: none;
+    border-radius: 0px 100px 100px 0px;
+    padding: 6px 15px 6px 6px;
+    float: right;
+    cursor: pointer;
+}
+
+header .width div#buscador button#lupa:focus{
+    outline: none;
+}
+
+header .width div#identificate{
+    width: auto;
+    margin-right: 2%;
+    display: inline-block;
+}
+
+header .width div#identificate a#boton-iden{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 6px 28px;
+    background-color: none;
+    border: 2px solid white;
+    border-radius: 100px;
+    display: inline-block;
+}
+
+header .width div#identificate a#boton-iden:hover{
+    color: #0E550B;
+    font-weight: bold;
+    background-color: white;
+    border: transparent;
+}
+
+header .width div#compra{
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header .width a#cesta{
+    color: #F9D51F;
+    font-size: 20px;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* section libro principal */
+
+section{
+    width: 100%;
+    text-align: center;
+}
+
+.width div#libro-principal{
+    border: solid purple;
+    margin: 2% 0% 0% 0%;
+}
+
+.width div#img-libro{
+    border: solid blue;
+    width: 21%;
+    text-align: left;
+    padding: 0;
+    margin: 0%;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.width .textos{
+    border: solid red;
+    width: 50%;
+    text-align: left;
+    padding: 0;
+    margin: 0% 0% 0% 1%;
+    display: inline-block;
+}
+
+.width div#libro-principal div#empezar-libro{
+    /* width: auto; */
+}
+
+.width div#libro-principal div#empezar-libro a#boton-pdf{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 6px 28px;
+    background-color: #0E550B;
+    border-radius: 100px;
+}
+
+.width div#libro-principal div#anadir-cesta{
+    /* width: auto; */
+}
+
+.width div#libro-principal div#anadir-cesta a#boton-cesta{
+    text-decoration: none;
+    color: #0E550B;
+    font-size: 16px;
+    padding: 6px 28px;
+    background-color: #F9D51F;
+    border-radius: 100px;
+}
+
+/* section otros libros del autor */
+
+.secciones{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.secciones h2{
+    color: #0E550B;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    vertical-align: middle;
+}
+
+section .flechas{
+    width: auto;
+    display: inline-block;
+}
+
+section .flechas a#prev{
+    color: #0E550B;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+}
+
+section .flechas a#next{
+    color: #0E550B;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: left;
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+}
+
+section .secciones .libro-popular{
+    width: 16%;
+    margin: 2% 2% 0% 1%;
+    vertical-align: top;
+    display: inline-block;
+}
+
+section .secciones .text-populares{
+    width: auto;
+    margin-top: 3%;
+}
+
+section .secciones .libro-popular .text-populares .p-titulo{
+    font-size: 17px;
+}
+
+section .secciones .libro-popular .text-populares .p-autor{
+    font-size: 16px;
+}
+
+section .secciones .libro-popular .text-populares .estrellas{
+    font-size: 100%;
+}
+
+section .secciones .libro-popular .text-populares .estrellas .fa-star{
+    margin: 2% 4% 0% 0%;
+}
+
+section .secciones div#fondo-suscribirse{
+    border: solid purple;
+    background-color: #F9D51F;
+    width: 100%;
+
+}
+
+section .secciones div#fondo-suscribirse p#sus-bold{
+    color: #0E550B;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin: 2% 0% 0% 0%;
+}
+
+section .secciones div#fondo-suscribirse p#sus-bold::before{
+    font-family: "Font Awesome 5 Free"; font-weight: normal; content: "\f0e0";
+    color: #0E550B;
+    font-size: 23px;
+    margin-right: 1%;
+    vertical-align: middle;
+}
+
+section .secciones div#fondo-suscribirse p#sus-regular{
+    color: #0E550B;
+    font-size: 16px;
+    text-align: center;
+    margin: 0% 0% 0% 0%;
+}
+
+section .secciones div#fondo-suscribirse form#formulario{
+    text-align: center;
+    margin: 1% 0% 2% 0%;
+}
+
+section .secciones div#fondo-suscribirse form#formulario input#mail{
+    font-size: 15px;
+    width: 20%;
+    border: none;
+    border-radius: 6px;
+    padding: 5px 0px 5px 10px;
+    outline: none;
+}
+
+section .secciones div#fondo-suscribirse form#formulario input#button{
+    color: white;
+    font-size: 15px;
+    width: 9%;
+    background-color: #0E550B;
+    border: none;
+    border-radius: 6px;
+    padding: 5px 10px 5px 10px;
+    user-select: none;
+    cursor: pointer;
+}
+
+section .secciones div#fondo-suscribirse form#formulario input#button:hover{
+    background-color:rgb(5, 61, 3);
+    outline: none;
+}
+
+/* footer */
+
+footer{
+    width: 100%;
+    background-color: #0E550B;
+    text-align: center;
+}
+
+footer .width .listas-footer{
+    width: 100%;
+    padding: 0;
+    margin: 3% 0% 3% 0%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .width .listas-footer .list-indiv{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    list-style-type: none;
+}
+
+footer .width .listas-footer .list-indiv .p-amarillo{
+    color: #F9D51F;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer .width div#copyright{
+    width: 100%;
+    margin: 0% 0% 3% 0%;
+    vertical-align: middle;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .width p{
+    color: white;
+    font-size: 16px;
+    line-height: 180%;
+    text-align: left;
+    margin: 0%;
+}
+
+footer .width div#copyright div#rrss{
+    width: 15%;
+    text-align: right;
+    margin: 0%;
+    vertical-align: middle;
+}
+
+footer .width div#copyright i.fa-facebook-f{
+    color: #F9D51F;
+    font-size: 20px;
+    margin: 0% 20% 0% 0%;
+}
+
+footer .width div#copyright i.fa-instagram{
+    color: #F9D51F;
+    font-size: 20px;
+    margin: 0% 20% 0% 0%;
+}
+
+footer .width div#copyright i.fa-twitter{
+    color: #F9D51F;
+    font-size: 20px;
+    margin: 0%;
+}
