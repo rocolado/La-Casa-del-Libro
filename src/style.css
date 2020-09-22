@@ -104,13 +104,11 @@ header .width a#cesta{
 /* sections */
 
 section{
-    border: solid grey;
     width: 100%;
     text-align: center;
 }
 
 .secciones{
-    border: solid red;
     margin-top: 1%;
     margin-bottom: 1%;
     text-align: center;
@@ -273,7 +271,7 @@ section .secciones div#fondo-suscribirse{
     border: solid purple;
     background-color: #F9D51F;
     width: 100%;
-    /* vertical-align: middle; */
+
 }
 
 section .secciones div#fondo-suscribirse p#sus-bold{
@@ -339,34 +337,63 @@ footer{
 }
 
 footer .width .listas-footer{
-    border: solid orange;
     width: 100%;
-    min-width: 60%;
     padding: 0;
     margin: 3% 0% 3% 0%;
     display: flex;
     justify-content: space-between;
 }
 
-footer .width .list-footer{
-    border: solid red;
-    /* width: 40%; */
-    min-width: 20%;
+footer .width .listas-footer .list-indiv{
     padding: 0;
     margin: 0;
     list-style: none;
     list-style-type: none;
 }
 
-footer .width .list-footer .p-amarillo{
+footer .width .listas-footer .list-indiv .p-amarillo{
     color: #F9D51F;
     font-size: 18px;
     font-weight: bold;
 }
 
-footer .width .list-footer p{
+footer .width div#copyright{
+    width: 100%;
+    margin: 0% 0% 3% 0%;
+    vertical-align: middle;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .width p{
     color: white;
     font-size: 16px;
+    line-height: 180%;
     text-align: left;
-    margin: 1% 0% 1% 0%;
+    margin: 0%;
+}
+
+footer .width div#copyright div#rrss{
+    width: 15%;
+    text-align: right;
+    margin: 0%;
+    vertical-align: middle;
+}
+
+footer .width div#copyright i.fa-facebook-f{
+    color: #F9D51F;
+    font-size: 20px;
+    margin: 0% 20% 0% 0%;
+}
+
+footer .width div#copyright i.fa-instagram{
+    color: #F9D51F;
+    font-size: 20px;
+    margin: 0% 20% 0% 0%;
+}
+
+footer .width div#copyright i.fa-twitter{
+    color: #F9D51F;
+    font-size: 20px;
+    margin: 0%;
 }
