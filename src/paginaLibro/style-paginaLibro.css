@@ -145,12 +145,12 @@ section{
 
 .width div#libro-principal{
     border: solid purple;
-    margin: 2% 0% 0% 0%;
+    margin: 2% 0% 1% 0%;
 }
 
 .width div#img-libro{
     border: solid blue;
-    width: 21%;
+    width: 19%;
     text-align: left;
     padding: 0;
     margin: 0%;
@@ -160,15 +160,25 @@ section{
 
 .width .textos{
     border: solid red;
-    width: 50%;
+    width: 60%;
     text-align: left;
     padding: 0;
-    margin: 0% 0% 0% 1%;
+    margin: 0% 0% 0% 2%;
     display: inline-block;
 }
 
+.width div#libro-principal div#botones-libro{
+    border: solid coral;
+    width: 100%;
+    margin: 2% 0% 0% 0%;
+    display: flex;
+    justify-content: space-around;
+}
+
 .width div#libro-principal div#empezar-libro{
-    /* width: auto; */
+    border: solid blueviolet;
+    width: auto;
+    margin: 0% 0% 0% 0%;
 }
 
 .width div#libro-principal div#empezar-libro a#boton-pdf{
@@ -180,8 +190,14 @@ section{
     border-radius: 100px;
 }
 
+.width div#libro-principal div#empezar-libro a#boton-pdf .fa-book-open{
+    margin-right: 8px;
+}
+
 .width div#libro-principal div#anadir-cesta{
-    /* width: auto; */
+    border: solid blueviolet;
+    width: auto;
+    margin: 0% 0% 0% 0%;
 }
 
 .width div#libro-principal div#anadir-cesta a#boton-cesta{
@@ -191,6 +207,10 @@ section{
     padding: 6px 28px;
     background-color: #F9D51F;
     border-radius: 100px;
+}
+
+.width div#libro-principal div#anadir-cesta a#boton-cesta .fa-shopping-basket{
+    margin-right: 8px;
 }
 
 /* section otros libros del autor */
