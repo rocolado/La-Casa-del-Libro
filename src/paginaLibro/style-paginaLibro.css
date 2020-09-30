@@ -5,7 +5,6 @@
 /* general */
 
 .width{
-    border: solid grey;
     width: 70%;
     margin-left: auto;
     margin-right: auto;
@@ -13,6 +12,15 @@
 
 img{
     box-shadow: 5px 5px 8px rgb(0, 0, 0, 0.8);
+}
+
+.textos{
+    width: 60%;
+    text-align: left;
+    padding: 0;
+    margin: 0% 0% 0% 2%;
+    vertical-align: middle;
+    display: inline-block;
 }
 
 .p-titulo{
@@ -48,7 +56,6 @@ img{
 
 header{
     width: 100%;
-    height: 130px;
     background-color: #0E550B;
     text-align: center;
 }
@@ -68,7 +75,7 @@ header h1{
 header div#buscador{
     width: auto;
     display: inline-block;
-    margin: 45px 20% 0px 20%;
+    margin: 3% 20% 3% 20%;
 }
 
 header .width div#buscador input[type="text"]{
@@ -136,6 +143,39 @@ header .width a#cesta{
     cursor: pointer;
 }
 
+/* menu navegacion */
+
+nav{
+    width: 100%;
+    background-color: #0E550B;
+    text-align: center;
+}
+
+nav .width ul#menu{
+    list-style: none;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .width ul#menu .apartados{
+    width: 20%;
+    padding: 1% 0%;
+    display: inline-block;
+}
+
+nav .width ul#menu .apartados:hover{
+    background-color: rgb(5, 61, 3);
+    cursor: pointer;
+}
+
+nav .width ul#menu .apartados a{
+    text-decoration: none;
+    color: white;
+}
+
 /* section libro principal */
 
 section{
@@ -144,12 +184,10 @@ section{
 }
 
 .width div#libro-principal{
-    border: solid purple;
-    margin: 2% 0% 1% 0%;
+    margin: 3% 0% 0% 0%;
 }
 
 .width div#img-libro{
-    border: solid blue;
     width: 19%;
     text-align: left;
     padding: 0;
@@ -158,59 +196,89 @@ section{
     display: inline-block;
 }
 
-.width .textos{
-    border: solid red;
-    width: 60%;
-    text-align: left;
-    padding: 0;
-    margin: 0% 0% 0% 2%;
-    display: inline-block;
-}
-
 .width div#libro-principal div#botones-libro{
-    border: solid coral;
     width: 100%;
     margin: 2% 0% 0% 0%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    vertical-align: middle;
 }
 
-.width div#libro-principal div#empezar-libro{
-    border: solid blueviolet;
+.width div#libro-principal div#botones-libro div#empezar-libro{
     width: auto;
-    margin: 0% 0% 0% 0%;
+    margin: 0% 21% 0% 0%;
 }
 
-.width div#libro-principal div#empezar-libro a#boton-pdf{
+.width div#libro-principal div#botones-libro div#empezar-libro a#boton-pdf{
     text-decoration: none;
     color: white;
     font-size: 16px;
-    padding: 6px 28px;
+    padding: 8px 22px;
     background-color: #0E550B;
     border-radius: 100px;
 }
 
-.width div#libro-principal div#empezar-libro a#boton-pdf .fa-book-open{
+.width div#libro-principal div#botones-libro div#empezar-libro a#boton-pdf .fa-book-open{
     margin-right: 8px;
 }
 
-.width div#libro-principal div#anadir-cesta{
-    border: solid blueviolet;
+.width div#libro-principal div#botones-libro div#anadir-cesta{
     width: auto;
-    margin: 0% 0% 0% 0%;
+    margin: 0% 0% 0% 18%;
 }
 
-.width div#libro-principal div#anadir-cesta a#boton-cesta{
+.width div#libro-principal div#botones-libro div#anadir-cesta a#boton-cesta{
     text-decoration: none;
     color: #0E550B;
     font-size: 16px;
-    padding: 6px 28px;
+    padding: 8px 22px;
     background-color: #F9D51F;
     border-radius: 100px;
 }
 
-.width div#libro-principal div#anadir-cesta a#boton-cesta .fa-shopping-basket{
+.width div#libro-principal div#botones-libro div#anadir-cesta a#boton-cesta .fa-shopping-basket{
     margin-right: 8px;
+}
+
+.width div#libro-principal div#botones-libro div#anadir-cesta::before{
+    width: auto;
+    content: "18.05€";
+    color: #0E550B;
+    font-size: 20px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+/* section autor */
+
+section#autor{
+    width: 100%;
+    background-color: #E8E8E8;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+section#autor .width div#img-autor{
+    margin: 3% 0% 3% 0%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+section#autor .width .textos{
+    width: 62%;
+}
+
+section#autor .width .textos .estrellas{
+    color: #F9D51F;
+    font-size: 100%;
+}
+
+section#autor .width .textos .p-titulo{
+    font-size: 16px;
+}
+
+section#autor .width .textos .p-resumen{
+    margin: 2% 0% 0% 0%;
 }
 
 /* section otros libros del autor */
@@ -285,10 +353,9 @@ section .secciones .libro-popular .text-populares .estrellas .fa-star{
 }
 
 section .secciones div#fondo-suscribirse{
-    border: solid purple;
     background-color: #F9D51F;
     width: 100%;
-
+    margin-bottom: 2%;
 }
 
 section .secciones div#fondo-suscribirse p#sus-bold{
@@ -296,7 +363,8 @@ section .secciones div#fondo-suscribirse p#sus-bold{
     font-size: 18px;
     font-weight: bold;
     text-align: center;
-    margin: 2% 0% 0% 0%;
+    padding: 2% 0% 0% 0%;
+    margin: 0%;
 }
 
 section .secciones div#fondo-suscribirse p#sus-bold::before{
@@ -311,12 +379,12 @@ section .secciones div#fondo-suscribirse p#sus-regular{
     color: #0E550B;
     font-size: 16px;
     text-align: center;
-    margin: 0% 0% 0% 0%;
+    margin: 0%;
 }
 
 section .secciones div#fondo-suscribirse form#formulario{
     text-align: center;
-    margin: 1% 0% 2% 0%;
+    padding: 1% 0% 2% 0%;
 }
 
 section .secciones div#fondo-suscribirse form#formulario input#mail{
@@ -355,8 +423,7 @@ footer{
 
 footer .width .listas-footer{
     width: 100%;
-    padding: 0;
-    margin: 3% 0% 3% 0%;
+    padding: 3% 0% 3% 0%;
     display: flex;
     justify-content: space-between;
 }
@@ -365,7 +432,6 @@ footer .width .listas-footer .list-indiv{
     padding: 0;
     margin: 0;
     list-style: none;
-    list-style-type: none;
 }
 
 footer .width .listas-footer .list-indiv .p-amarillo{
@@ -376,7 +442,7 @@ footer .width .listas-footer .list-indiv .p-amarillo{
 
 footer .width div#copyright{
     width: 100%;
-    margin: 0% 0% 3% 0%;
+    padding: 0% 0% 3% 0%;
     vertical-align: middle;
     display: flex;
     justify-content: space-between;

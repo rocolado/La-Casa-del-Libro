@@ -3,7 +3,6 @@
 }
 
 .width{
-    border: solid grey;
     width: 70%;
     margin-left: auto;
     margin-right: auto;
@@ -13,7 +12,6 @@
 
 header{
     width: 100%;
-    height: 130px;
     background-color: #0E550B;
     text-align: center;
 }
@@ -33,7 +31,7 @@ header h1{
 header div#buscador{
     width: auto;
     display: inline-block;
-    margin: 45px 20% 0px 20%;
+    margin: 3% 20% 3% 20%;
 }
 
 header .width div#buscador input[type="text"]{
@@ -101,6 +99,39 @@ header .width a#cesta{
     cursor: pointer;
 }
 
+/* menu navegacion */
+
+nav{
+    width: 100%;
+    background-color: #0E550B;
+    text-align: center;
+}
+
+nav .width ul#menu{
+    list-style: none;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .width ul#menu .apartados{
+    width: 20%;
+    padding: 1% 0%;
+    display: inline-block;
+}
+
+nav .width ul#menu .apartados:hover{
+    background-color: rgb(5, 61, 3);
+    cursor: pointer;
+}
+
+nav .width ul#menu .apartados a{
+    text-decoration: none;
+    color: white;
+}
+
 /* sections */
 
 section{
@@ -109,7 +140,7 @@ section{
 }
 
 .secciones{
-    margin-top: 1%;
+    margin-top: 2%;
     margin-bottom: 1%;
     text-align: center;
     vertical-align: middle;
@@ -268,10 +299,9 @@ section .secciones .text-populares .estrellas .fa-star{
 }
 
 section .secciones div#fondo-suscribirse{
-    border: solid purple;
     background-color: #F9D51F;
     width: 100%;
-
+    margin-bottom: 2%;
 }
 
 section .secciones div#fondo-suscribirse p#sus-bold{
@@ -279,7 +309,8 @@ section .secciones div#fondo-suscribirse p#sus-bold{
     font-size: 18px;
     font-weight: bold;
     text-align: center;
-    margin: 2% 0% 0% 0%;
+    padding: 2% 0% 0% 0%;
+    margin: 0%;
 }
 
 section .secciones div#fondo-suscribirse p#sus-bold::before{
@@ -294,12 +325,12 @@ section .secciones div#fondo-suscribirse p#sus-regular{
     color: #0E550B;
     font-size: 16px;
     text-align: center;
-    margin: 0% 0% 0% 0%;
+    margin: 0%;
 }
 
 section .secciones div#fondo-suscribirse form#formulario{
     text-align: center;
-    margin: 1% 0% 2% 0%;
+    padding: 1% 0% 2% 0%;
 }
 
 section .secciones div#fondo-suscribirse form#formulario input#mail{
@@ -338,8 +369,7 @@ footer{
 
 footer .width .listas-footer{
     width: 100%;
-    padding: 0;
-    margin: 3% 0% 3% 0%;
+    padding: 3% 0% 3% 0%;
     display: flex;
     justify-content: space-between;
 }
@@ -348,7 +378,6 @@ footer .width .listas-footer .list-indiv{
     padding: 0;
     margin: 0;
     list-style: none;
-    list-style-type: none;
 }
 
 footer .width .listas-footer .list-indiv .p-amarillo{
@@ -359,7 +388,7 @@ footer .width .listas-footer .list-indiv .p-amarillo{
 
 footer .width div#copyright{
     width: 100%;
-    margin: 0% 0% 3% 0%;
+    padding: 0% 0% 3% 0%;
     vertical-align: middle;
     display: flex;
     justify-content: space-between;
